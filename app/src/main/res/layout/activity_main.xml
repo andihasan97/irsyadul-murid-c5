@@ -1,18 +1,369 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+   <RelativeLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="13dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="17:30:57   |     Rabu Legi, 21 Desember 2022"
+		android:layout_centerHorizontal="true"
+		android:textSize="19sp"
+		android:id="@+id/tv_jam_date_main"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Waktu Sholat Hari ini untuk Kab  Ngawi"
+		android:layout_below="@id/tv_jam_date_main"
+		android:layout_marginTop="13dp"
+		android:textSize="16sp"
+		android:id="@+id/tv_hari_ini_main"/>
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="99dp"
+		app:cardCornerRadius="13dp"
+		app:cardElevation="4dp"
+		android:layout_below="@id/tv_hari_ini_main"
+		android:layout_marginTop="13dp"
+		android:id="@+id/cv_markaz_main">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="13dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="-7° 26` 00`` ~ 111° 26` 00`` | 150 mdpl"
+				android:layout_centerHorizontal="true"
+				android:id="@+id/tv_markaz_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Deklinasi:"
+				android:layout_below="@id/tv_markaz_main"
+				android:layout_marginTop="13dp"
+				android:id="@+id/tv_deklinasi_main"
+				android:layout_marginLeft="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Equation of Time:"
+				android:layout_below="@id/tv_deklinasi_main"
+				android:layout_marginTop="13dp"
+				android:layout_marginLeft="14dp"
+				android:id="@+id/tv_equation_of_time_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="-2° -13` -33``"
+				android:layout_below="@id/tv_markaz_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:id="@+id/hasil_dek_real_main"
+				android:layout_marginRight="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0° 10` 11``"
+				android:layout_below="@id/hasil_dek_real_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:id="@+id/hasil_equation_of_time_main"
+				android:layout_marginRight="14dp"/>
+
+		</RelativeLayout>
+
+	</androidx.cardview.widget.CardView>
+
+	<androidx.cardview.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:cardCornerRadius="13dp"
+		app:cardElevation="4dp"
+		android:layout_below="@id/cv_markaz_main"
+		android:layout_marginTop="13dp"
+		android:id="@+id/cv_hasil_main">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="13dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Irsyadul Murid C5"
+				android:layout_centerHorizontal="true"
+				android:textSize="19sp"
+				android:id="@+id/tv_irsyadul_murid_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Imsak"
+				android:layout_below="@id/tv_irsyadul_murid_main"
+				android:layout_marginTop="27dp"
+				android:id="@+id/tv_imsak_main"
+				android:layout_marginLeft="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="03 : 30"
+				android:layout_below="@id/tv_irsyadul_murid_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="27dp"
+				android:id="@+id/hasil_imsak_main"
+				android:layout_marginRight="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Shubuh"
+				android:layout_below="@id/tv_imsak_main"
+				android:layout_marginTop="13dp"
+				android:id="@+id/tv_shubuh_main"
+				android:layout_marginLeft="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="04 : 12"
+				android:layout_below="@id/hasil_imsak_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:id="@+id/hasil_shubuh_main"
+				android:layout_marginRight="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Terbit"
+				android:id="@+id/tv_terbit_main"
+				android:layout_below="@id/tv_shubuh_main"
+				android:layout_marginTop="13dp"
+				android:layout_marginLeft="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="05 : 13"
+				android:id="@+id/hasil_terbit_main"
+				android:layout_below="@id/hasil_shubuh_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Dluha"
+				android:layout_below="@id/tv_terbit_main"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="13dp"
+				android:id="@+id/tv_dluha_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="06 : 45"
+				android:layout_below="@id/hasil_terbit_main"
+				android:layout_marginRight="14dp"
+				android:layout_marginTop="13dp"
+				android:layout_alignParentRight="true"
+				android:id="@+id/hasil_dluha_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Dzuhur"
+				android:layout_below="@id/tv_dluha_main"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="13dp"
+				android:id="@+id/tv_dzuhur_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="11 : 57"
+				android:id="@+id/hasil_dzuhur_main"
+				android:layout_below="@id/hasil_dluha_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Ashar"
+				android:id="@+id/tv_ashar_main"
+				android:layout_below="@id/tv_dzuhur_main"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="13dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="14 :45"
+				android:id="@+id/hasil_ashar_main"
+				android:layout_below="@id/hasil_dzuhur_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="14dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Maghrib"
+				android:layout_below="@id/tv_ashar_main"
+				android:layout_marginTop="13dp"
+				android:layout_marginLeft="14dp"
+				android:id="@+id/tv_maghrib_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="18 : 00"
+				android:layout_below="@id/hasil_ashar_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="14dp"
+				android:id="@+id/hasil_maghrib_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Isya`"
+				android:layout_below="@id/tv_maghrib_main"
+				android:layout_marginTop="13dp"
+				android:layout_marginLeft="14dp"
+				android:id="@+id/tv_isya_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="19 : 00"
+				android:layout_below="@id/hasil_maghrib_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="14dp"
+				android:id="@+id/hasil_isya_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Rashdul Qiblat 1"
+				android:layout_below="@id/tv_isya_main"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="31dp"
+				android:id="@+id/tv_rashdul1_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="08 : 12 : 56"
+				android:layout_below="@id/hasil_isya_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="14dp"
+				android:layout_marginTop="31dp"
+				android:id="@+id/hasil_rashdul1_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Rashdul Qiblat 2"
+				android:layout_below="@id/tv_rashdul1_main"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="13dp"
+				android:id="@+id/tv_rashdul2_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="04 : 12 : 23"
+				android:layout_below="@id/hasil_rashdul1_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="14dp"
+				android:layout_marginTop="13dp"
+				android:id="@+id/hasil_rashdul2_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Azimuth Qiblat B-U"
+				android:layout_below="@id/tv_rashdul2_main"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="13dp"
+				android:id="@+id/tv_azimuth_ub_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Azimuth Qiblat UTSB"
+				android:layout_below="@id/tv_azimuth_ub_main"
+				android:layout_marginLeft="14dp"
+				android:layout_marginTop="13dp"
+				android:id="@+id/tv_azimuth_utsb_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="24° 22` 17,07``"
+				android:layout_below="@id/hasil_rashdul2_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="14dp"
+				android:id="@+id/hasil_azumuth_ub_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="294° 22` 17,07``"
+				android:layout_below="@id/hasil_azumuth_ub_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="14dp"
+				android:layout_marginTop="13dp"/>
+
+			<androidx.appcompat.widget.AppCompatButton
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Custom Tanggal"
+				android:layout_below="@id/tv_azimuth_utsb_main"
+				android:layout_marginLeft="27dp"
+				android:layout_marginRight="27dp"
+				android:layout_marginTop="31dp"
+				android:id="@+id/btn_custom_tanggal"/>
+
+			<androidx.appcompat.widget.AppCompatButton
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="About"
+				android:id="@+id/btn_about"
+				android:layout_marginLeft="27dp"
+				android:layout_marginRight="27dp"
+				android:layout_below="@id/btn_custom_tanggal"
+				android:layout_marginTop="5dp"/>
+
+		</RelativeLayout>
+
+	</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+</android.widget.ScrollView>

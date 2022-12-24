@@ -362,12 +362,12 @@
 			<androidx.appcompat.widget.AppCompatButton
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:text="Custom Tanggal"
+				android:text="Custom Hisab"
 				android:layout_below="@id/tv_azimuth_utsb_main"
 				android:layout_marginLeft="27dp"
 				android:layout_marginRight="27dp"
 				android:layout_marginTop="31dp"
-				android:id="@+id/btn_custom_tanggal"/>
+				android:id="@+id/btn_custom_hisab"/>
 
 			<androidx.appcompat.widget.AppCompatButton
 				android:layout_width="match_parent"
@@ -376,7 +376,7 @@
 				android:id="@+id/btn_about"
 				android:layout_marginLeft="27dp"
 				android:layout_marginRight="27dp"
-				android:layout_below="@id/btn_custom_tanggal"
+				android:layout_below="@id/btn_custom_hisab"
 				android:layout_marginTop="5dp"/>
 
 		</RelativeLayout>

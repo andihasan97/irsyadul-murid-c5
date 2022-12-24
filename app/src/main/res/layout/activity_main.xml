@@ -264,24 +264,43 @@
 				android:layout_marginTop="13dp"
 				android:layout_marginRight="14dp"
 				android:id="@+id/hasil_isya_main"/>
+                
+            <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Tengah Malam"
+				android:layout_below="@id/tv_isya_main"
+				android:layout_marginTop="13dp"
+				android:layout_marginLeft="14dp"
+				android:id="@+id/tv_tengahmalam_main"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="22 : 59"
+				android:layout_below="@id/hasil_isya_main"
+				android:layout_alignParentRight="true"
+				android:layout_marginTop="13dp"
+				android:layout_marginRight="14dp"
+				android:id="@+id/hasil_tengahmalam_main"/>    
 
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="Rashdul Qiblat 1"
-				android:layout_below="@id/tv_isya_main"
+				android:layout_below="@id/tv_tengahmalam_main"
 				android:layout_marginLeft="14dp"
-				android:layout_marginTop="31dp"
+				android:layout_marginTop="27dp"
 				android:id="@+id/tv_rashdul1_main"/>
 
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="08 : 12 : 56"
-				android:layout_below="@id/hasil_isya_main"
+				android:layout_below="@id/hasil_tengahmalam_main"
 				android:layout_alignParentRight="true"
 				android:layout_marginRight="14dp"
-				android:layout_marginTop="31dp"
+				android:layout_marginTop="27dp"
 				android:id="@+id/hasil_rashdul1_main"/>
 
 			<TextView

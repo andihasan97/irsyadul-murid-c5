@@ -1,8 +1,11 @@
 package com.andihasan7.irsyadulmuridc5
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 
-class CustomHisabActivity{
-    
+class CustomHisabActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_custom_hisab)
+    }
 }

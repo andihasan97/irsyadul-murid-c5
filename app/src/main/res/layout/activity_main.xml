@@ -4,35 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
     tools:context=".MainActivity">
 
    <RelativeLayout
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+    
 	android:padding="13dp">
 
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="17:30:57   |     Rabu Legi, 21 Desember 2022"
-		android:layout_centerHorizontal="true"
+        android:layout_alignParentLeft="true"
+		android:text="17:30:57"
+        android:textColor="?attr/text_outcv"
 		android:textSize="19sp"
-		android:id="@+id/tv_jam_date_main"/>
+		android:id="@+id/tv_time_main"/>
+        
+    <TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_time_main"
+        android:layout_toRightOf="@id/tv_time_main"
+		android:text="   |     Rabu Legi, 21 Desember 2022"
+        android:textColor="?attr/text_outcv"
+		android:textSize="19sp"
+		android:id="@+id/tv_date_main"/>    
 
 	<TextView
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:text="Waktu Sholat Hari ini untuk Kab  Ngawi"
-		android:layout_below="@id/tv_jam_date_main"
+		android:layout_below="@id/tv_time_main"
 		android:layout_marginTop="13dp"
+        android:textColor="?attr/text_outcv"
 		android:textSize="16sp"
 		android:id="@+id/tv_hari_ini_main"/>
 
 	<androidx.cardview.widget.CardView
 		android:layout_width="match_parent"
-		android:layout_height="99dp"
+		android:layout_height="102dp"
 		app:cardCornerRadius="13dp"
-		app:cardElevation="4dp"
+		app:cardElevation="2dp"
 		android:layout_below="@id/tv_hari_ini_main"
 		android:layout_marginTop="13dp"
 		android:id="@+id/cv_markaz_main">
@@ -40,12 +54,14 @@
 		<RelativeLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
+            android:background="?attr/cardview"
 			android:padding="13dp">
 
 			<TextView
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="-7° 26` 00`` ~ 111° 26` 00`` | 150 mdpl"
+                android:textColor="?attr/text_incv"
 				android:layout_centerHorizontal="true"
 				android:id="@+id/tv_markaz_main"/>
 
@@ -95,7 +111,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		app:cardCornerRadius="13dp"
-		app:cardElevation="4dp"
+		app:cardElevation="2dp"
 		android:layout_below="@id/cv_markaz_main"
 		android:layout_marginTop="13dp"
 		android:id="@+id/cv_hasil_main">
@@ -103,6 +119,7 @@
 		<RelativeLayout
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
+            android:background="?attr/cardview"
 			android:padding="13dp">
 
 			<TextView

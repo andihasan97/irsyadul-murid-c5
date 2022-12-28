@@ -1,0 +1,95 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 46,
+          "index": -1,
+          "line": 121
+        },
+        "start": {
+          "column": 12,
+          "index": -1,
+          "line": 121
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/values/colors.xml",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": -1,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": -1,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/values/themes.xml",
+      "selection": {
+        "end": {
+          "column": 51,
+          "index": -1,
+          "line": 18
+        },
+        "start": {
+          "column": 8,
+          "index": -1,
+          "line": 18
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/values-night/themes.xml",
+      "selection": {
+        "end": {
+          "column": 45,
+          "index": -1,
+          "line": 16
+        },
+        "start": {
+          "column": 45,
+          "index": -1,
+          "line": 16
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/values/attr.xml",
+      "selection": {
+        "end": {
+          "column": 23,
+          "index": -1,
+          "line": 3
+        },
+        "start": {
+          "column": 23,
+          "index": -1,
+          "line": 3
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_custom_hisab.xml",
+      "selection": {
+        "end": {
+          "column": 48,
+          "index": -1,
+          "line": 332
+        },
+        "start": {
+          "column": 48,
+          "index": -1,
+          "line": 332
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml"
+}

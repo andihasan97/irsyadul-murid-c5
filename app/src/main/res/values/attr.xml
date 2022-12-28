@@ -1,0 +1,5 @@
+<resources>
+    <attr name="cardview" format="reference"/>
+    <attr name="text_outcv" format="reference"/>
+    <attr name="text_incv" format="reference"/>
+</resources>

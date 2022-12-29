@@ -1,405 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="?attr/colorPrimary"
-    tools:context=".MainActivity">
+<android.widget.ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/ParsialMatchParent.BG"
+        tools:context=".MainActivity"
+            >
+    <RelativeLayout
+        style="@style/AllMatchParent"
+        android:padding="13dp"
+            >
 
-   <RelativeLayout
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-    
-	android:padding="13dp">
+        <TextView
+            style="@style/TextView.OutCv"
+            android:layout_alignParentLeft="true"
+            android:text="17:30:57"
+            android:id="@+id/tv_time_main"
+                />
 
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-		android:text="17:30:57"
-        android:textColor="?attr/text_outcv"
-		android:textSize="19sp"
-		android:id="@+id/tv_time_main"/>
-        
-    <TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/tv_time_main"
-        android:layout_toRightOf="@id/tv_time_main"
-		android:text="   |     Rabu Legi, 21 Desember 2022"
-        android:textColor="?attr/text_outcv"
-		android:textSize="19sp"
-		android:id="@+id/tv_date_main"/>    
+        <TextView
+            style="@style/TextView.OutCv"
+            android:layout_alignBaseline="@id/tv_time_main"
+            android:layout_toRightOf="@id/tv_time_main"
+            android:text="   |     Rabu Legi, 21 Desember 2022"
+            android:id="@+id/tv_date_main"
+                />
 
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Waktu Sholat Hari ini untuk Kab  Ngawi"
-		android:layout_below="@id/tv_time_main"
-		android:layout_marginTop="13dp"
-        android:textColor="?attr/text_outcv"
-		android:textSize="16sp"
-		android:id="@+id/tv_hari_ini_main"/>
+        <TextView
+            style="@style/TextView.OutCv"
+            android:text="Waktu Sholat Hari ini untuk Kab  Ngawi"
+            android:layout_below="@id/tv_time_main"
+            android:layout_marginTop="13dp"
+            android:textSize="16sp"
+            android:id="@+id/tv_hari_ini_main"
+                />
 
-	<androidx.cardview.widget.CardView
-		android:layout_width="match_parent"
-		android:layout_height="102dp"
-		app:cardCornerRadius="13dp"
-		app:cardElevation="2dp"
-		android:layout_below="@id/tv_hari_ini_main"
-		android:layout_marginTop="13dp"
-		android:id="@+id/cv_markaz_main">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="2dp"
+            android:layout_below="@id/tv_hari_ini_main"
+            android:layout_marginTop="13dp"
+            android:id="@+id/cv_markaz_main"
+                >
 
-		<RelativeLayout
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-            android:background="?attr/cardview"
-			android:padding="13dp">
+            <RelativeLayout
+                style="@style/AllMatchParent"
+                android:background="?attr/cardview"
+                android:padding="13dp"
+                    >
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="-7° 26` 00`` ~ 111° 26` 00`` | 150 mdpl"
-                android:textColor="?attr/text_incv"
-				android:layout_centerHorizontal="true"
-				android:id="@+id/tv_markaz_main"/>
+                <TextView
+                    style="@style/TextView.InCv"
+                    android:text="-7° 26` 00`` ~ 111° 26` 00`` | 150 mdpl"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv_markaz_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Deklinasi:"
-				android:layout_below="@id/tv_markaz_main"
-				android:layout_marginTop="13dp"
-				android:id="@+id/tv_deklinasi_main"
-				android:layout_marginLeft="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Deklinasi"
+                    android:layout_below="@id/tv_markaz_main"
+                    android:id="@+id/tv_deklinasi_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Equation of Time:"
-				android:layout_below="@id/tv_deklinasi_main"
-				android:layout_marginTop="13dp"
-				android:layout_marginLeft="14dp"
-				android:id="@+id/tv_equation_of_time_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Equation of Time"
+                    android:layout_below="@id/tv_deklinasi_main"
+                    android:id="@+id/tv_equation_of_time_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="-2° -13` -33``"
-				android:layout_below="@id/tv_markaz_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:id="@+id/hasil_dek_real_main"
-				android:layout_marginRight="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="-2° -13` -33``"
+                    android:layout_below="@id/tv_markaz_main"
+                    android:id="@+id/hasil_dek_real_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="0° 10` 11``"
-				android:layout_below="@id/hasil_dek_real_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:id="@+id/hasil_equation_of_time_main"
-				android:layout_marginRight="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="0° 10` 11``"
+                    android:layout_below="@id/hasil_dek_real_main"
+                    android:id="@+id/hasil_equation_of_time_main"
+                        />
 
-		</RelativeLayout>
+            </RelativeLayout>
 
-	</androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-	<androidx.cardview.widget.CardView
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		app:cardCornerRadius="13dp"
-		app:cardElevation="2dp"
-		android:layout_below="@id/cv_markaz_main"
-		android:layout_marginTop="13dp"
-		android:id="@+id/cv_hasil_main">
+        <androidx.cardview.widget.CardView
+            style="@style/AllMatchParent"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="2dp"
+            android:layout_below="@id/cv_markaz_main"
+            android:layout_marginTop="13dp"
+            android:id="@+id/cv_hasil_main"
+                >
 
-		<RelativeLayout
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-            android:background="?attr/cardview"
-			android:padding="13dp">
+            <RelativeLayout
+                style="@style/AllMatchParent"
+                android:background="?attr/cardview"
+                android:padding="13dp"
+                    >
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Irsyadul Murid C5"
-				android:layout_centerHorizontal="true"
-				android:textSize="19sp"
-				android:id="@+id/tv_irsyadul_murid_main"/>
+                <TextView
+                    style="@style/TextView.InCv"
+                    android:text="Irsyadul Murid C5"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="19sp"
+                    android:id="@+id/tv_irsyadul_murid_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Imsak"
-				android:layout_below="@id/tv_irsyadul_murid_main"
-				android:layout_marginTop="27dp"
-				android:id="@+id/tv_imsak_main"
-				android:layout_marginLeft="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Imsak"
+                    android:layout_below="@id/tv_irsyadul_murid_main"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/tv_imsak_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="03 : 30"
-				android:layout_below="@id/tv_irsyadul_murid_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="27dp"
-				android:id="@+id/hasil_imsak_main"
-				android:layout_marginRight="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="3 : 30"
+                    android:layout_below="@id/tv_irsyadul_murid_main"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/hasil_imsak_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Shubuh"
-				android:layout_below="@id/tv_imsak_main"
-				android:layout_marginTop="13dp"
-				android:id="@+id/tv_shubuh_main"
-				android:layout_marginLeft="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Shubuh"
+                    android:layout_below="@id/tv_imsak_main"
+                    android:id="@+id/tv_shubuh_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="04 : 12"
-				android:layout_below="@id/hasil_imsak_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:id="@+id/hasil_shubuh_main"
-				android:layout_marginRight="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="4 : 12"
+                    android:layout_below="@id/hasil_imsak_main"
+                    android:id="@+id/hasil_shubuh_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Terbit"
-				android:id="@+id/tv_terbit_main"
-				android:layout_below="@id/tv_shubuh_main"
-				android:layout_marginTop="13dp"
-				android:layout_marginLeft="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Terbit"
+                    android:id="@+id/tv_terbit_main"
+                    android:layout_below="@id/tv_shubuh_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="05 : 13"
-				android:id="@+id/hasil_terbit_main"
-				android:layout_below="@id/hasil_shubuh_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:layout_marginRight="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="5 : 13"
+                    android:id="@+id/hasil_terbit_main"
+                    android:layout_below="@id/hasil_shubuh_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Dluha"
-				android:layout_below="@id/tv_terbit_main"
-				android:layout_marginLeft="14dp"
-				android:layout_marginTop="13dp"
-				android:id="@+id/tv_dluha_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Dluha"
+                    android:layout_below="@id/tv_terbit_main"
+                    android:id="@+id/tv_dluha_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="06 : 45"
-				android:layout_below="@id/hasil_terbit_main"
-				android:layout_marginRight="14dp"
-				android:layout_marginTop="13dp"
-				android:layout_alignParentRight="true"
-				android:id="@+id/hasil_dluha_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="6 : 45"
+                    android:layout_below="@id/hasil_terbit_main"
+                    android:id="@+id/hasil_dluha_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Dzuhur"
-				android:layout_below="@id/tv_dluha_main"
-				android:layout_marginLeft="14dp"
-				android:layout_marginTop="13dp"
-				android:id="@+id/tv_dzuhur_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Dzuhur"
+                    android:layout_below="@id/tv_dluha_main"
+                    android:id="@+id/tv_dzuhur_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="11 : 57"
-				android:id="@+id/hasil_dzuhur_main"
-				android:layout_below="@id/hasil_dluha_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:layout_marginRight="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="11 : 57"
+                    android:id="@+id/hasil_dzuhur_main"
+                    android:layout_below="@id/hasil_dluha_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Ashar"
-				android:id="@+id/tv_ashar_main"
-				android:layout_below="@id/tv_dzuhur_main"
-				android:layout_marginLeft="14dp"
-				android:layout_marginTop="13dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Ashar"
+                    android:id="@+id/tv_ashar_main"
+                    android:layout_below="@id/tv_dzuhur_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="14 :45"
-				android:id="@+id/hasil_ashar_main"
-				android:layout_below="@id/hasil_dzuhur_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:layout_marginRight="14dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="14 : 45"
+                    android:id="@+id/hasil_ashar_main"
+                    android:layout_below="@id/hasil_dzuhur_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Maghrib"
-				android:layout_below="@id/tv_ashar_main"
-				android:layout_marginTop="13dp"
-				android:layout_marginLeft="14dp"
-				android:id="@+id/tv_maghrib_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Maghrib"
+                    android:layout_below="@id/tv_ashar_main"
+                    android:id="@+id/tv_maghrib_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="18 : 00"
-				android:layout_below="@id/hasil_ashar_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:layout_marginRight="14dp"
-				android:id="@+id/hasil_maghrib_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="18 : 00"
+                    android:layout_below="@id/hasil_ashar_main"
+                    android:id="@+id/hasil_maghrib_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Isya`"
-				android:layout_below="@id/tv_maghrib_main"
-				android:layout_marginTop="13dp"
-				android:layout_marginLeft="14dp"
-				android:id="@+id/tv_isya_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Isya`"
+                    android:layout_below="@id/tv_maghrib_main"
+                    android:id="@+id/tv_isya_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="19 : 00"
-				android:layout_below="@id/hasil_maghrib_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:layout_marginRight="14dp"
-				android:id="@+id/hasil_isya_main"/>
-                
-            <TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Tengah Malam"
-				android:layout_below="@id/tv_isya_main"
-				android:layout_marginTop="13dp"
-				android:layout_marginLeft="14dp"
-				android:id="@+id/tv_tengahmalam_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="19 : 00"
+                    android:layout_below="@id/hasil_maghrib_main"
+                    android:id="@+id/hasil_isya_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="22 : 59"
-				android:layout_below="@id/hasil_isya_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:layout_marginRight="14dp"
-				android:id="@+id/hasil_tengahmalam_main"/>    
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Tengah Malam"
+                    android:layout_below="@id/tv_isya_main"
+                    android:id="@+id/tv_tengahmalam_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Rashdul Qiblat 1"
-				android:layout_below="@id/tv_tengahmalam_main"
-				android:layout_marginLeft="14dp"
-				android:layout_marginTop="27dp"
-				android:id="@+id/tv_rashdul1_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="22 : 59"
+                    android:layout_below="@id/hasil_isya_main"
+                    android:id="@+id/hasil_tengahmalam_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="08 : 12 : 56"
-				android:layout_below="@id/hasil_tengahmalam_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginRight="14dp"
-				android:layout_marginTop="27dp"
-				android:id="@+id/hasil_rashdul1_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Rashdul Qiblat 1"
+                    android:layout_below="@id/tv_tengahmalam_main"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/tv_rashdul1_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Rashdul Qiblat 2"
-				android:layout_below="@id/tv_rashdul1_main"
-				android:layout_marginLeft="14dp"
-				android:layout_marginTop="13dp"
-				android:id="@+id/tv_rashdul2_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="8 : 12 : 56"
+                    android:layout_below="@id/hasil_tengahmalam_main"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/hasil_rashdul1_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="04 : 12 : 23"
-				android:layout_below="@id/hasil_rashdul1_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginRight="14dp"
-				android:layout_marginTop="13dp"
-				android:id="@+id/hasil_rashdul2_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Rashdul Qiblat 2"
+                    android:layout_below="@id/tv_rashdul1_main"
+                    android:id="@+id/tv_rashdul2_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Azimuth Qiblat B-U"
-				android:layout_below="@id/tv_rashdul2_main"
-				android:layout_marginLeft="14dp"
-				android:layout_marginTop="13dp"
-				android:id="@+id/tv_azimuth_ub_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="4 : 12 : 23"
+                    android:layout_below="@id/hasil_rashdul1_main"
+                    android:id="@+id/hasil_rashdul2_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="Azimuth Qiblat UTSB"
-				android:layout_below="@id/tv_azimuth_ub_main"
-				android:layout_marginLeft="14dp"
-				android:layout_marginTop="13dp"
-				android:id="@+id/tv_azimuth_utsb_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Arah Qiblat B-U"
+                    android:layout_below="@id/tv_rashdul2_main"
+                    android:id="@+id/tv_azimuth_ub_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="24° 22` 17,07``"
-				android:layout_below="@id/hasil_rashdul2_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginTop="13dp"
-				android:layout_marginRight="14dp"
-				android:id="@+id/hasil_azumuth_ub_main"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv"
+                    android:text="Arah Qiblat UTSB"
+                    android:layout_below="@id/tv_azimuth_ub_main"
+                    android:id="@+id/tv_azimuth_utsb_main"
+                        />
 
-			<TextView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:text="294° 22` 17,07``"
-				android:layout_below="@id/hasil_azumuth_ub_main"
-				android:layout_alignParentRight="true"
-				android:layout_marginRight="14dp"
-				android:layout_marginTop="13dp"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="24° 22` 17,07``"
+                    android:layout_below="@id/hasil_rashdul2_main"
+                    android:id="@+id/hasil_azumuth_ub_main"
+                        />
 
-			<androidx.appcompat.widget.AppCompatButton
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:text="Custom Hisab"
-				android:layout_below="@id/tv_azimuth_utsb_main"
-				android:layout_marginLeft="27dp"
-				android:layout_marginRight="27dp"
-				android:layout_marginTop="31dp"
-				android:id="@+id/btn_custom_hisab"/>
+                <TextView
+                    style="@style/TextView.InCv.Tv.Hasil"
+                    android:text="294° 22` 17,07``"
+                    android:layout_below="@id/hasil_azumuth_ub_main"
+                        />
 
-			<androidx.appcompat.widget.AppCompatButton
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:text="About"
-				android:id="@+id/btn_about"
-				android:layout_marginLeft="27dp"
-				android:layout_marginRight="27dp"
-				android:layout_below="@id/btn_custom_hisab"
-				android:layout_marginTop="5dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Custom Hisab"
+                    android:layout_below="@id/tv_azimuth_utsb_main"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:layout_marginTop="31dp"
+                    android:id="@+id/btn_custom_hisab"
+                        />
 
-		</RelativeLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:id="@+id/btn_about"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:layout_below="@id/btn_custom_hisab"
+                    android:layout_marginTop="5dp"
+                        />
 
-	</androidx.cardview.widget.CardView>
+            </RelativeLayout>
 
-</RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
 
 </android.widget.ScrollView>

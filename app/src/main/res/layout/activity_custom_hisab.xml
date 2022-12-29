@@ -3,15 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent"
-    android:background="?attr/colorPrimary"
+    style="@style/ParsialMatchParent.BG"
     tools:context=".CustomHisabActivity"
         >
 
     <android.widget.RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        style="@style/AllMatchParent"
         android:padding="13dp"
             >
 
@@ -19,13 +16,12 @@
             android:layout_width="match_parent"
             android:layout_height="157dp"
             app:cardCornerRadius="13dp"
-            app:cardElevation="4dp"
+            app:cardElevation="2dp"
             android:id="@+id/cv_input_custom"
                 >
 
             <android.widget.RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/AllMatchParent"
                 android:background="?attr/cardview"
                 android:padding="13dp"
                     >
@@ -91,16 +87,15 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="4dp"
+            app:cardCornerRadius="13dp"
+            app:cardElevation="2dp"
             android:layout_below="@id/cv_input_custom"
             android:layout_marginTop="13dp"
             android:id="@+id/cv_hasil_custom"
                 >
 
             <android.widget.RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/AllMatchParent"
                 android:background="?attr/cardview"
                 android:padding="13dp"
                     >
@@ -400,7 +395,7 @@
                 <android.widget.TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Azimuth Qiblat B-U"
+                    android:text="Arah Qiblat B-U"
                     android:id="@+id/tv_azimuth_bu_custom"
                     android:layout_below="@id/tv_eot_custom"
                     android:layout_marginLeft="27dp"
@@ -421,7 +416,7 @@
                 <android.widget.TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Azimuth Qiblat UTSB"
+                    android:text="Arah Qiblat UTSB"
                     android:layout_below="@id/tv_azimuth_bu_custom"
                     android:layout_marginTop="13dp"
                     android:layout_marginLeft="27dp"
@@ -447,17 +442,6 @@
                     android:id="@+id/tv_info_custom"
                     android:layout_marginTop="31dp"
                     android:layout_marginLeft="27dp"
-                        />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Salin"
-                    android:id="@+id/btn_salin"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@id/tv_info_custom"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="13dp"
                         />
 
             </android.widget.RelativeLayout>

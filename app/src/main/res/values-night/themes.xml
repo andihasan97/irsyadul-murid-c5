@@ -12,8 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="cardview">@color/cv_dark</item>
-        <item name="text_outcv">@color/cv_dark</item>
+        <item name="cardview">@color/bg_light</item>
+        <item name="text_outcv">@color/bg_light</item>
         <item name="text_incv">@color/bg_dark</item>
     </style>
 </resources>

@@ -20,4 +20,50 @@
         
         
     </style>
+    
+    <style name="AllMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="ParsialMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="ParsialMatchParent.BG">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+    
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="TextView.OutCv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/text_outcv</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+    
+    <style name="TextView.InCv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/text_incv</item>
+    </style>
+    
+    <style name="TextView.InCv.Tv">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="TextView.InCv.Tv.Hasil">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    
+    
+    <!-- style for custom hisab -->
+    
 </resources>

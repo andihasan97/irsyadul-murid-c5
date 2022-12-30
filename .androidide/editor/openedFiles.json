@@ -1,17 +1,32 @@
 {
   "allFiles": [
     {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_about.xml",
+      "selection": {
+        "end": {
+          "column": 55,
+          "index": -1,
+          "line": 169
+        },
+        "start": {
+          "column": 55,
+          "index": -1,
+          "line": 169
+        }
+      }
+    },
+    {
       "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/values/themes.xml",
       "selection": {
         "end": {
-          "column": 33,
+          "column": 0,
           "index": -1,
-          "line": 61
+          "line": 0
         },
         "start": {
-          "column": 33,
+          "column": 0,
           "index": -1,
-          "line": 61
+          "line": 0
         }
       }
     },
@@ -19,47 +34,17 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml",
       "selection": {
         "end": {
-          "column": 34,
+          "column": 0,
           "index": -1,
-          "line": 125
+          "line": 0
         },
         "start": {
-          "column": 34,
+          "column": 0,
           "index": -1,
-          "line": 125
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_custom_hisab.xml",
-      "selection": {
-        "end": {
-          "column": 26,
-          "index": -1,
-          "line": 444
-        },
-        "start": {
-          "column": 26,
-          "index": -1,
-          "line": 444
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_about.xml",
-      "selection": {
-        "end": {
-          "column": 41,
-          "index": -1,
-          "line": 5
-        },
-        "start": {
-          "column": 41,
-          "index": -1,
-          "line": 5
+          "line": 0
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_about.xml"
 }

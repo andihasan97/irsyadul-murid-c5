@@ -4,32 +4,47 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/values/themes.xml",
       "selection": {
         "end": {
-          "column": 54,
+          "column": 44,
           "index": -1,
-          "line": 57
+          "line": 48
         },
         "start": {
-          "column": 39,
+          "column": 44,
           "index": -1,
-          "line": 57
+          "line": 48
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_about.xml",
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_custom_hisab.xml",
       "selection": {
         "end": {
-          "column": 0,
+          "column": 52,
           "index": -1,
-          "line": 204
+          "line": 56
         },
         "start": {
-          "column": 0,
+          "column": 52,
           "index": -1,
-          "line": 204
+          "line": 56
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/CustomHisabActivity.kt",
+      "selection": {
+        "end": {
+          "column": 52,
+          "index": -1,
+          "line": 32
+        },
+        "start": {
+          "column": 52,
+          "index": -1,
+          "line": 32
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_about.xml"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/CustomHisabActivity.kt"
 }

@@ -75,14 +75,14 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="-2° -13` -33``"
+                    android:text="@string/values_degree"
                     android:layout_below="@id/tv_markaz_main"
                     android:id="@+id/hasil_dek_real_main"
                         />
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="0° 10` 11``"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_dek_real_main"
                     android:id="@+id/hasil_equation_of_time_main"
                         />
@@ -124,7 +124,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="3 : 30"
+                    android:text="@string/values_time"
                     android:layout_below="@id/tv_irsyadul_murid_main"
                     android:layout_marginTop="27dp"
                     android:id="@+id/hasil_imsak_main"
@@ -139,7 +139,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="4 : 12"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_imsak_main"
                     android:id="@+id/hasil_shubuh_main"
                         />
@@ -153,7 +153,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="5 : 13"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_terbit_main"
                     android:layout_below="@id/hasil_shubuh_main"
                         />
@@ -167,7 +167,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="6 : 45"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_terbit_main"
                     android:id="@+id/hasil_dluha_main"
                         />
@@ -181,7 +181,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="11 : 57"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_dzuhur_main"
                     android:layout_below="@id/hasil_dluha_main"
                         />
@@ -195,7 +195,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="14 : 45"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_ashar_main"
                     android:layout_below="@id/hasil_dzuhur_main"
                         />
@@ -209,7 +209,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="18 : 00"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_ashar_main"
                     android:id="@+id/hasil_maghrib_main"
                         />
@@ -223,7 +223,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="19 : 00"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_maghrib_main"
                     android:id="@+id/hasil_isya_main"
                         />
@@ -237,7 +237,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="22 : 59"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_isya_main"
                     android:id="@+id/hasil_tengahmalam_main"
                         />
@@ -252,7 +252,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="8 : 12 : 56"
+                    android:text="00 : 00 : 00"
                     android:layout_below="@id/hasil_tengahmalam_main"
                     android:layout_marginTop="27dp"
                     android:id="@+id/hasil_rashdul1_main"
@@ -267,7 +267,7 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="4 : 12 : 23"
+                    android:text="00 : 00 : 00"
                     android:layout_below="@id/hasil_rashdul1_main"
                     android:id="@+id/hasil_rashdul2_main"
                         />
@@ -278,6 +278,13 @@
                     android:layout_below="@id/tv_rashdul2_main"
                     android:id="@+id/tv_azimuth_ub_main"
                         />
+                        
+                <TextView
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
+                    android:text="@string/values_degree"
+                    android:layout_below="@id/hasil_rashdul2_main"
+                    android:id="@+id/hasil_azimuth_ub_main"
+                        />        
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv"
@@ -288,15 +295,8 @@
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="24° 22` 17,07``"
-                    android:layout_below="@id/hasil_rashdul2_main"
-                    android:id="@+id/hasil_azumuth_ub_main"
-                        />
-
-                <TextView
-                    style="@style/AllWrapContent.InCv.Tv.Hasil"
-                    android:text="294° 22` 17,07``"
-                    android:layout_below="@id/hasil_azumuth_ub_main"
+                    android:text="@string/values_degree"
+                    android:layout_below="@id/hasil_azimuth_ub_main"
                         />
 
                 <androidx.appcompat.widget.AppCompatButton

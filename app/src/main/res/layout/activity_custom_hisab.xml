@@ -34,30 +34,26 @@
                         />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    style="@style/AllWrapContent"
+                    style="@style/Input"
                     android:hint="Tanggal"
-                    android:textColorHint="?attr/text_hint"
                     android:layout_below="@id/tv_title_custom"
                     android:id="@+id/edt_input_tanggal"
                     android:layout_marginTop="13dp"
                         />
 
-                <androidx.appcompat.widget.AppCompatEditText
-                    style="@style/AllWrapContent"
-                    android:hint="Bulan"
-                    android:textColorHint="?attr/text_hint"
-                    android:id="@+id/edt_input_bulan"
+                <android.widget.Spinner
+                    style="@style/Input"
+                    android:id="@+id/spn_input_bulan"
                     android:layout_toRightOf="@id/edt_input_tanggal"
                     android:layout_alignBaseline="@id/edt_input_tanggal"
                     android:layout_marginLeft="13dp"
                         />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    style="@style/AllWrapContent"
+                    style="@style/Input"
                     android:hint="Tahun"
-                    android:textColorHint="?attr/text_hint"
-                    android:layout_toRightOf="@id/edt_input_bulan"
-                    android:layout_alignBaseline="@id/edt_input_bulan"
+                    android:layout_toRightOf="@id/spn_input_bulan"
+                    android:layout_marginTop="35dp"
                     android:layout_marginLeft="13dp"
                     android:id="@+id/edt_input_tahun"
                         />
@@ -122,7 +118,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="03 : 23"
+                    android:text="@string/values_time"
                     android:layout_below="@id/tv_markaz_custom"
                     android:layout_marginTop="27dp"
                     android:id="@+id/hasil_imsak_custom"
@@ -137,7 +133,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="03 : 45"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_shubuh_custom"
                     android:layout_below="@id/hasil_imsak_custom"
                         />
@@ -151,7 +147,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="04 : 55"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_terbit_custom"
                     android:layout_below="@id/hasil_shubuh_custom"
                         />
@@ -165,7 +161,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="05 : 57"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_dluha_custom"
                     android:layout_below="@id/hasil_terbit_custom"
                         />
@@ -179,7 +175,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="11 : 53"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_dzuhur_custom"
                     android:layout_below="@id/hasil_dluha_custom"
                         />
@@ -193,7 +189,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="14 : 57"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_ashar_custom"
                     android:layout_below="@id/hasil_dzuhur_custom"
                         />
@@ -207,7 +203,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="18 : 00"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_maghrib_custom"
                     android:layout_below="@id/hasil_ashar_custom"
                         />
@@ -221,7 +217,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="19 : 00"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_maghrib_custom"
                     android:id="@+id/hasil_isya_custom"
                         />
@@ -235,7 +231,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="22 : 59"
+                    android:text="@string/values_time"
                     android:id="@+id/hasil_tengahmalam_custom"
                     android:layout_below="@id/hasil_isya_custom"
                         />
@@ -250,7 +246,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="14 : 51 : 12"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_tengahmalam_custom"
                     android:layout_marginTop="31dp"
                     android:id="@+id/hasil_rashdul1_custom"
@@ -265,7 +261,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="08 : 51 : 12"
+                    android:text="@string/values_time"
                     android:layout_below="@id/hasil_rashdul1_custom"
                     android:id="@+id/hasil_rashdul2_custom"
                         />
@@ -280,7 +276,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="-9° -7` 00``"
+                    android:text="@string/values_degree"
                     android:layout_below="@id/hasil_rashdul2_custom"
                     android:layout_marginTop="31dp"
                     android:id="@+id/hasil_deklinasi_custom"
@@ -295,7 +291,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="0° 12` 17``"
+                    android:text="@string/values_degree"
                     android:layout_below="@id/hasil_deklinasi_custom"
                     android:id="@+id/hasil_eot_custom"
                         />
@@ -310,7 +306,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="22° 24` 17``"
+                    android:text="@string/values_degree"
                     android:layout_below="@id/hasil_eot_custom"
                     android:id="@+id/hasil_azimuth_bu_custom"
                     android:layout_marginTop="31dp"
@@ -325,7 +321,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv.TvCustom.Hasil"
-                    android:text="294° 22` 17``"
+                    android:text="@string/values_degree"
                     android:layout_below="@id/hasil_azimuth_bu_custom"
                     android:id="@+id/hasil_azimuth_utsb_custom"
                         />

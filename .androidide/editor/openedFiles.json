@@ -1,47 +1,32 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_about.xml",
-      "selection": {
-        "end": {
-          "column": 55,
-          "index": -1,
-          "line": 169
-        },
-        "start": {
-          "column": 55,
-          "index": -1,
-          "line": 169
-        }
-      }
-    },
-    {
       "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/values/themes.xml",
       "selection": {
         "end": {
-          "column": 0,
+          "column": 54,
           "index": -1,
-          "line": 0
+          "line": 57
         },
         "start": {
-          "column": 0,
+          "column": 39,
           "index": -1,
-          "line": 0
+          "line": 57
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml",
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_about.xml",
       "selection": {
         "end": {
           "column": 0,
           "index": -1,
-          "line": 0
+          "line": 204
         },
         "start": {
           "column": 0,
           "index": -1,
-          "line": 0
+          "line": 204
         }
       }
     }

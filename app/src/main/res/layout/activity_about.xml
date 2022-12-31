@@ -8,16 +8,13 @@
     >
 
     <android.widget.RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/ParsialMatchParent"
         >
         
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            style="@style/AllMatchParent.CarView"
             app:cardCornerRadius="13dp"
             app:cardElevation="2dp"
-            android:layout_marginTop="13dp"
             android:layout_marginLeft="13dp"
             android:layout_marginRight="13dp"
             android:layout_marginBottom="13dp"
@@ -25,8 +22,7 @@
         >
 
             <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/AllMatchParent"
                 android:background="?attr/cardview"
                     
             >
@@ -43,7 +39,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="\t Irsyadul Murid C5 ini menggunakan metode hisab yang ada di Kitab Irsyadul Murid cetakan ke 5 karya KH. Ahmad Ghozali Muhammad Fathulloh terbitan Ponpes Al-Mubarok Lanbulan Madura Jawa Timur."
+                    android:text="\t Irsyadul Murid C5 ini menggunakan metode hisab yang ada di Kitab Irsyadul Murid cetakan ke 5 karya KH. Ahmad Ghozali Muhammad Fatchulloh terbitan Ponpes Al-Mubarok Lanbulan Madura Jawa Timur."
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/banner_about"
                     android:layout_marginLeft="13dp"
                     android:layout_marginTop="31dp"
@@ -51,11 +48,26 @@
                     android:id="@+id/tv_about"
                         
                 />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\t Aplikasi ini sebuah support untuk Lembaga Falakiyah PCNU Kabupaten Ngawi."
+                    android:textColor="?attr/text_incv"
+                    android:id="@+id/tv_support"
+                    android:layout_below="@id/tv_about"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="21dp"
+                        
+                />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sosial Media"
+                    android:textColor="?attr/text_incv"
+                    android:textStyle="bold"
                     android:layout_below="@id/tv_support"
                     android:layout_marginTop="49dp"
                     android:gravity="center"
@@ -68,10 +80,24 @@
                     android:layout_width="79dp"
                     android:layout_height="wrap_content"
                     android:text="Email"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_sosmed"
                     android:layout_marginTop="37dp"
                     android:id="@+id/tv_email"
                     android:layout_marginLeft="27dp"
+                        
+                />
+                
+                <TextView
+                    android:layout_width="223dp"
+                    android:layout_height="wrap_content"
+                    android:text=": moonlight.official001@gmail.com"
+                    android:textColor="?attr/text_incv"
+                    android:layout_below="@id/tv_sosmed"
+                    android:layout_alignBaseline="@id/tv_email"
+                    android:layout_alignParentRight="true"
+                    android:gravity="left"
+                    android:id="@+id/tv_isi_email"
                         
                 />
 
@@ -79,6 +105,7 @@
                     android:layout_width="79dp"
                     android:layout_height="wrap_content"
                     android:text="Instagram"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_email"
                     android:layout_marginTop="21dp"
                     android:layout_marginLeft="27dp"
@@ -89,19 +116,8 @@
                 <TextView
                     android:layout_width="223dp"
                     android:layout_height="wrap_content"
-                    android:text=": moonlight.official001@gmail.com"
-                    android:layout_below="@id/tv_sosmed"
-                    android:layout_alignBaseline="@id/tv_email"
-                    android:layout_alignParentRight="true"
-                    android:gravity="left"
-                    android:id="@+id/tv_isi_email"
-                        
-                />
-
-                <TextView
-                    android:layout_width="223dp"
-                    android:layout_height="wrap_content"
                     android:text=": @moonlight_studio001"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_isi_email"
                     android:layout_alignParentRight="true"
                     android:layout_alignBaseline="@id/tv_instagram"
@@ -113,6 +129,7 @@
                     android:layout_width="79dp"
                     android:layout_height="wrap_content"
                     android:text="GitHub"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_instagram"
                     android:layout_marginTop="21dp"
                     android:layout_marginLeft="27dp"
@@ -124,6 +141,7 @@
                     android:layout_width="223dp"
                     android:layout_height="wrap_content"
                     android:text=": github.com/andihasan97/irsyadul-murid-c5"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_isi_instagram"
                     android:layout_alignParentRight="true"
                     android:layout_alignBaseline="@id/tv_github"
@@ -135,6 +153,7 @@
                     android:layout_width="223dp"
                     android:layout_height="wrap_content"
                     android:text=": github.com/moonlightstudio7"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_isi_github1"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="16dp"
@@ -146,6 +165,7 @@
                     android:layout_width="79dp"
                     android:layout_height="wrap_content"
                     android:text="Youtube"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_github"
                     android:layout_marginTop="69dp"
                     android:layout_marginLeft="27dp"
@@ -157,6 +177,7 @@
                     android:layout_width="223dp"
                     android:layout_height="wrap_content"
                     android:text=": youtube.com/@moonlightstudio"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_isi_github2"
                     android:layout_alignParentRight="true"
                     android:layout_alignBaseline="@id/tv_youtube"
@@ -167,22 +188,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="version 1.1.3"
+                    android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_youtube"
                     android:gravity="center"
                     android:layout_marginTop="57dp"
                     android:layout_marginBottom="17dp"
-                        
-                />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="\t Aplikasi ini sebuah support untuk Lembaga Falakiyah PCNU Kabupaten Ngawi."
-                    android:id="@+id/tv_support"
-                    android:layout_below="@id/tv_about"
-                    android:layout_marginLeft="13dp"
-                    android:layout_marginRight="13dp"
-                    android:layout_marginTop="21dp"
                         
                 />
 

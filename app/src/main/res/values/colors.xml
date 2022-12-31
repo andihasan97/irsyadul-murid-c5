@@ -13,4 +13,5 @@
     <color name="cv_dark">#FFB7F497</color>
     <color name="text_bgd">#FF79A566</color>
     <color name="text_cvd">#FF0E3601</color>
+    <color name="txt_hint">#FF92938B</color>
 </resources>

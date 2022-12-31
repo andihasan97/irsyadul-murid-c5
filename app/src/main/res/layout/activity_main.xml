@@ -7,19 +7,20 @@
         tools:context=".MainActivity"
             >
     <RelativeLayout
-        style="@style/AllMatchParent"
+        style="@style/ParsialMatchParent"
         android:padding="13dp"
             >
 
         <TextView
-            style="@style/TextView.OutCv"
+            style="@style/AllWrapContent.OutCv"
             android:layout_alignParentLeft="true"
             android:text="17:30:57"
+            android:textStyle="bold"
             android:id="@+id/tv_time_main"
                 />
 
         <TextView
-            style="@style/TextView.OutCv"
+            style="@style/AllWrapContent.OutCv"
             android:layout_alignBaseline="@id/tv_time_main"
             android:layout_toRightOf="@id/tv_time_main"
             android:text="   |     Rabu Legi, 21 Desember 2022"
@@ -27,7 +28,7 @@
                 />
 
         <TextView
-            style="@style/TextView.OutCv"
+            style="@style/AllWrapContent.OutCv"
             android:text="Waktu Sholat Hari ini untuk Kab  Ngawi"
             android:layout_below="@id/tv_time_main"
             android:layout_marginTop="13dp"
@@ -52,35 +53,35 @@
                     >
 
                 <TextView
-                    style="@style/TextView.InCv"
+                    style="@style/AllWrapContent.InCv"
                     android:text="-7° 26` 00`` ~ 111° 26` 00`` | 150 mdpl"
                     android:layout_centerHorizontal="true"
                     android:id="@+id/tv_markaz_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Deklinasi"
                     android:layout_below="@id/tv_markaz_main"
                     android:id="@+id/tv_deklinasi_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Equation of Time"
                     android:layout_below="@id/tv_deklinasi_main"
                     android:id="@+id/tv_equation_of_time_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="-2° -13` -33``"
                     android:layout_below="@id/tv_markaz_main"
                     android:id="@+id/hasil_dek_real_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="0° 10` 11``"
                     android:layout_below="@id/hasil_dek_real_main"
                     android:id="@+id/hasil_equation_of_time_main"
@@ -106,7 +107,7 @@
                     >
 
                 <TextView
-                    style="@style/TextView.InCv"
+                    style="@style/AllWrapContent.InCv"
                     android:text="Irsyadul Murid C5"
                     android:layout_centerHorizontal="true"
                     android:textSize="19sp"
@@ -114,7 +115,7 @@
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Imsak"
                     android:layout_below="@id/tv_irsyadul_murid_main"
                     android:layout_marginTop="27dp"
@@ -122,7 +123,7 @@
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="3 : 30"
                     android:layout_below="@id/tv_irsyadul_murid_main"
                     android:layout_marginTop="27dp"
@@ -130,119 +131,119 @@
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Shubuh"
                     android:layout_below="@id/tv_imsak_main"
                     android:id="@+id/tv_shubuh_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="4 : 12"
                     android:layout_below="@id/hasil_imsak_main"
                     android:id="@+id/hasil_shubuh_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Terbit"
                     android:id="@+id/tv_terbit_main"
                     android:layout_below="@id/tv_shubuh_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="5 : 13"
                     android:id="@+id/hasil_terbit_main"
                     android:layout_below="@id/hasil_shubuh_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Dluha"
                     android:layout_below="@id/tv_terbit_main"
                     android:id="@+id/tv_dluha_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="6 : 45"
                     android:layout_below="@id/hasil_terbit_main"
                     android:id="@+id/hasil_dluha_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Dzuhur"
                     android:layout_below="@id/tv_dluha_main"
                     android:id="@+id/tv_dzuhur_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="11 : 57"
                     android:id="@+id/hasil_dzuhur_main"
                     android:layout_below="@id/hasil_dluha_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Ashar"
                     android:id="@+id/tv_ashar_main"
                     android:layout_below="@id/tv_dzuhur_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="14 : 45"
                     android:id="@+id/hasil_ashar_main"
                     android:layout_below="@id/hasil_dzuhur_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Maghrib"
                     android:layout_below="@id/tv_ashar_main"
                     android:id="@+id/tv_maghrib_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="18 : 00"
                     android:layout_below="@id/hasil_ashar_main"
                     android:id="@+id/hasil_maghrib_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Isya`"
                     android:layout_below="@id/tv_maghrib_main"
                     android:id="@+id/tv_isya_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="19 : 00"
                     android:layout_below="@id/hasil_maghrib_main"
                     android:id="@+id/hasil_isya_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Tengah Malam"
                     android:layout_below="@id/tv_isya_main"
                     android:id="@+id/tv_tengahmalam_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="22 : 59"
                     android:layout_below="@id/hasil_isya_main"
                     android:id="@+id/hasil_tengahmalam_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Rashdul Qiblat 1"
                     android:layout_below="@id/tv_tengahmalam_main"
                     android:layout_marginTop="27dp"
@@ -250,7 +251,7 @@
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="8 : 12 : 56"
                     android:layout_below="@id/hasil_tengahmalam_main"
                     android:layout_marginTop="27dp"
@@ -258,42 +259,42 @@
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Rashdul Qiblat 2"
                     android:layout_below="@id/tv_rashdul1_main"
                     android:id="@+id/tv_rashdul2_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="4 : 12 : 23"
                     android:layout_below="@id/hasil_rashdul1_main"
                     android:id="@+id/hasil_rashdul2_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Arah Qiblat B-U"
                     android:layout_below="@id/tv_rashdul2_main"
                     android:id="@+id/tv_azimuth_ub_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv"
+                    style="@style/AllWrapContent.InCv.Tv"
                     android:text="Arah Qiblat UTSB"
                     android:layout_below="@id/tv_azimuth_ub_main"
                     android:id="@+id/tv_azimuth_utsb_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="24° 22` 17,07``"
                     android:layout_below="@id/hasil_rashdul2_main"
                     android:id="@+id/hasil_azumuth_ub_main"
                         />
 
                 <TextView
-                    style="@style/TextView.InCv.Tv.Hasil"
+                    style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="294° 22` 17,07``"
                     android:layout_below="@id/hasil_azumuth_ub_main"
                         />

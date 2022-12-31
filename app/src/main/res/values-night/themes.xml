@@ -15,5 +15,6 @@
         <item name="cardview">@color/bg_light</item>
         <item name="text_outcv">@color/bg_light</item>
         <item name="text_incv">@color/bg_dark</item>
+        <item name="text_hint">@color/txt_hint</item>
     </style>
 </resources>

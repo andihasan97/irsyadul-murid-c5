@@ -17,6 +17,7 @@
         <item name="cardview">@color/cv_light</item>
         <item name="text_outcv">@color/text_bg</item>
         <item name="text_incv">@color/text_bg</item>
+        <item name="text_hint">@color/txt_hint</item>
         
         
     </style>
@@ -24,6 +25,10 @@
     <style name="AllMatchParent">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="AllMatchParent.CarView">
+        <item name="android:layout_marginTop">13dp</item>
     </style>
     
     <style name="ParsialMatchParent">
@@ -35,35 +40,45 @@
         <item name="android:background">?attr/colorPrimary</item>
     </style>
     
-    <style name="TextView">
+    <style name="AllWrapContent">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
     
-    <style name="TextView.OutCv">
+    <style name="AllWrapContent.OutCv">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">?attr/text_outcv</item>
         <item name="android:textSize">19sp</item>
     </style>
     
-    <style name="TextView.InCv">
+    <style name="AllWrapContent.InCv">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">?attr/text_incv</item>
     </style>
     
-    <style name="TextView.InCv.Tv">
+    <style name="AllWrapContent.InCv.Tv">
         <item name="android:layout_width">120dp</item>
         <item name="android:layout_marginTop">13dp</item>
         <item name="android:gravity">center</item>
     </style>
     
-    <style name="TextView.InCv.Tv.Hasil">
+    <style name="AllWrapContent.InCv.Tv.Hasil">
         <item name="android:layout_alignParentRight">true</item>
     </style>
     
     
     <!-- style for custom hisab -->
+    
+    <style name="AllWrapContent.InCv.TvCustom">
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:layout_marginLeft">27dp</item>
+    </style>
+    
+    <style name="AllWrapContent.InCv.TvCustom.Hasil">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">27dp</item>
+    </style>
     
 </resources>

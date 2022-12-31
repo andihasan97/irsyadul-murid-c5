@@ -8,7 +8,7 @@
         >
 
     <android.widget.RelativeLayout
-        style="@style/AllMatchParent"
+        style="@style/ParsialMatchParent"
         android:padding="13dp"
             >
 
@@ -27,26 +27,25 @@
                     >
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv"
                     android:text="Irsyadul Murid C5"
                     android:textSize="19sp"
                     android:id="@+id/tv_title_custom"
                         />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent"
                     android:hint="Tanggal"
+                    android:textColorHint="?attr/text_hint"
                     android:layout_below="@id/tv_title_custom"
                     android:id="@+id/edt_input_tanggal"
                     android:layout_marginTop="13dp"
                         />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent"
                     android:hint="Bulan"
+                    android:textColorHint="?attr/text_hint"
                     android:id="@+id/edt_input_bulan"
                     android:layout_toRightOf="@id/edt_input_tanggal"
                     android:layout_alignBaseline="@id/edt_input_tanggal"
@@ -54,9 +53,9 @@
                         />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent"
                     android:hint="Tahun"
+                    android:textColorHint="?attr/text_hint"
                     android:layout_toRightOf="@id/edt_input_bulan"
                     android:layout_alignBaseline="@id/edt_input_bulan"
                     android:layout_marginLeft="13dp"
@@ -64,8 +63,7 @@
                         />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent"
                     android:text="Hitung"
                     android:id="@+id/btn_hitung"
                     android:layout_alignParentRight="true"
@@ -73,8 +71,7 @@
                         />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent"
                     android:text="Hapus"
                     android:id="@+id/btn_hapus"
                     android:layout_alignParentBottom="true"
@@ -85,12 +82,10 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            style="@style/AllMatchParent.CarView"
             app:cardCornerRadius="13dp"
             app:cardElevation="2dp"
             android:layout_below="@id/cv_input_custom"
-            android:layout_marginTop="13dp"
             android:id="@+id/cv_hasil_custom"
                 >
 
@@ -101,8 +96,7 @@
                     >
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv"
                     android:text="Waktu Sholat untuk Kabupaten Ngawi"
                     android:layout_centerHorizontal="true"
                     android:textSize="17sp"
@@ -110,8 +104,7 @@
                         />
                         
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv"
                     android:text="-7° 26` 00`` ~ 111° 26` 00`` | 150 mdpl"
                     android:layout_below="@id/tv_waktu_sholat_custom"
                     android:id="@+id/tv_markaz_custom"
@@ -120,324 +113,226 @@
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Imsak"
                     android:layout_below="@id/tv_markaz_custom"
                     android:layout_marginTop="27dp"
                     android:id="@+id/tv_imsak_custom"
-                    android:layout_marginLeft="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="03 : 23"
                     android:layout_below="@id/tv_markaz_custom"
-                    android:layout_alignParentRight="true"
                     android:layout_marginTop="27dp"
-                    android:layout_marginRight="27dp"
                     android:id="@+id/hasil_imsak_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Shubuh"
                     android:layout_below="@id/tv_imsak_custom"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="27dp"
                     android:id="@+id/tv_shubuh_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="03 : 45"
                     android:id="@+id/hasil_shubuh_custom"
                     android:layout_below="@id/hasil_imsak_custom"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Terbit"
                     android:id="@+id/tv_terbit_custom"
                     android:layout_below="@id/tv_shubuh_custom"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="04 : 55"
                     android:id="@+id/hasil_terbit_custom"
                     android:layout_below="@id/hasil_shubuh_custom"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Dluha"
                     android:layout_below="@id/tv_terbit_custom"
                     android:id="@+id/tv_dluha_custom"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginTop="13dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="05 : 57"
                     android:id="@+id/hasil_dluha_custom"
-                    android:layout_alignParentRight="true"
                     android:layout_below="@id/hasil_terbit_custom"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Dzuhur"
                     android:id="@+id/tv_dzuhur_custom"
                     android:layout_below="@id/tv_dluha_custom"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginTop="13dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="11 : 53"
                     android:id="@+id/hasil_dzuhur_custom"
                     android:layout_below="@id/hasil_dluha_custom"
-                    android:layout_marginTop="13dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Ashar"
                     android:layout_below="@id/tv_dzuhur_custom"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="27dp"
                     android:id="@+id/tv_ashar_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="14 : 57"
                     android:id="@+id/hasil_ashar_custom"
-                    android:layout_alignParentRight="true"
                     android:layout_below="@id/hasil_dzuhur_custom"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Maghrib"
                     android:id="@+id/tv_maghrib_custom"
                     android:layout_below="@id/tv_ashar_custom"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="18 : 00"
                     android:id="@+id/hasil_maghrib_custom"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="27dp"
-                    android:layout_marginTop="13dp"
                     android:layout_below="@id/hasil_ashar_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Isya`"
                     android:layout_below="@id/tv_maghrib_custom"
                     android:id="@+id/tv_isya_custom"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginTop="13dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="19 : 00"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="27dp"
-                    android:layout_marginTop="13dp"
                     android:layout_below="@id/hasil_maghrib_custom"
                     android:id="@+id/hasil_isya_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Tengah Malam"
                     android:id="@+id/tv_tengahmalam_custom"
                     android:layout_below="@id/tv_isya_custom"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginTop="13dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="22 : 59"
                     android:id="@+id/hasil_tengahmalam_custom"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="27dp"
-                    android:layout_marginTop="13dp"
                     android:layout_below="@id/hasil_isya_custom"
                         />
                         
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Rashdul Qiblat 1"
                     android:id="@+id/tv_rashdul1_custom"
                     android:layout_below="@id/tv_tengahmalam_custom"
-                    android:layout_marginLeft="27dp"
                     android:layout_marginTop="31dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="14 : 51 : 12"
-                    android:layout_alignParentRight="true"
                     android:layout_below="@id/hasil_tengahmalam_custom"
-                    android:layout_marginRight="27dp"
                     android:layout_marginTop="31dp"
                     android:id="@+id/hasil_rashdul1_custom"
                         />
                         
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Rashdul Qiblat 2"
                     android:id="@+id/tv_rashdul2_custom"
                     android:layout_below="@id/tv_rashdul1_custom"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginTop="13dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="08 : 51 : 12"
-                    android:layout_alignParentRight="true"
                     android:layout_below="@id/hasil_rashdul1_custom"
-                    android:layout_marginRight="27dp"
-                    android:layout_marginTop="13dp"
                     android:id="@+id/hasil_rashdul2_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Deklinasi"
                     android:layout_below="@id/tv_rashdul2_custom"
                     android:id="@+id/tv_deklinasi_custom"
                     android:layout_marginTop="31dp"
-                    android:layout_marginLeft="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="-9° -7` 00``"
                     android:layout_below="@id/hasil_rashdul2_custom"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="27dp"
                     android:layout_marginTop="31dp"
                     android:id="@+id/hasil_deklinasi_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Equation of Time"
                     android:layout_below="@id/tv_deklinasi_custom"
-                    android:layout_marginLeft="27dp"
-                    android:layout_marginTop="13dp"
                     android:id="@+id/tv_eot_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="0° 12` 17``"
                     android:layout_below="@id/hasil_deklinasi_custom"
                     android:id="@+id/hasil_eot_custom"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="27dp"
-                    android:layout_marginTop="13dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Arah Qiblat B-U"
                     android:id="@+id/tv_azimuth_bu_custom"
                     android:layout_below="@id/tv_eot_custom"
-                    android:layout_marginLeft="27dp"
                     android:layout_marginTop="31dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="22° 24` 17``"
                     android:layout_below="@id/hasil_eot_custom"
                     android:id="@+id/hasil_azimuth_bu_custom"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="27dp"
                     android:layout_marginTop="31dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom"
                     android:text="Arah Qiblat UTSB"
                     android:layout_below="@id/tv_azimuth_bu_custom"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginLeft="27dp"
                     android:id="@+id/tv_azimuth_utsb_custom"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/AllWrapContent.InCv.TvCustom.Hasil"
                     android:text="294° 22` 17``"
                     android:layout_below="@id/hasil_azimuth_bu_custom"
                     android:id="@+id/hasil_azimuth_utsb_custom"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="13dp"
-                    android:layout_marginRight="27dp"
                         />
 
                 <android.widget.TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="\t Jadwal di atas sudah ditambah Ihthiyat 2 menit kecuali Terbit dikurangi 2 menit, dihisab menggunakan metode di kitab Irsyadul Murid cetakan ke 5"
+                    style="@style/AllWrapContent.InCv"
+                    android:text="\t Jadwal di atas sudah ditambah Ihthiyat 2 menit kecuali Terbit dikurangi 2 menit."
                     android:layout_below="@id/tv_azimuth_utsb_custom"
                     android:id="@+id/tv_info_custom"
                     android:layout_marginTop="31dp"

@@ -1,32 +1,47 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/values/themes.xml",
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml",
       "selection": {
         "end": {
-          "column": 44,
+          "column": 47,
           "index": -1,
-          "line": 48
+          "line": 14
         },
         "start": {
-          "column": 44,
+          "column": 47,
           "index": -1,
-          "line": 48
+          "line": 14
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_custom_hisab.xml",
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/MainActivity.kt",
       "selection": {
         "end": {
-          "column": 52,
+          "column": 48,
           "index": -1,
-          "line": 56
+          "line": 64
         },
         "start": {
-          "column": 52,
+          "column": 48,
           "index": -1,
-          "line": 56
+          "line": 64
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/Konversi/Konversi.kt",
+      "selection": {
+        "end": {
+          "column": 47,
+          "index": -1,
+          "line": 0
+        },
+        "start": {
+          "column": 8,
+          "index": -1,
+          "line": 0
         }
       }
     },
@@ -34,17 +49,17 @@
       "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/CustomHisabActivity.kt",
       "selection": {
         "end": {
-          "column": 52,
+          "column": 0,
           "index": -1,
-          "line": 32
+          "line": 0
         },
         "start": {
-          "column": 52,
+          "column": 0,
           "index": -1,
-          "line": 32
+          "line": 0
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/CustomHisabActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/MainActivity.kt"
 }

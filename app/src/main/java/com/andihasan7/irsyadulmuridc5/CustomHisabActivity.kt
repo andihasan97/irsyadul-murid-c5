@@ -41,17 +41,15 @@ class CustomHisabActivity : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
                 // Mengambil index bulan yang dipilih
                 bulan = position + 1//.toString()
-                // Menampilkan index bulan yang dipilih di console
                 
 
-                
                 // test dengan | Toast.makeText(this@CustomHisabActivity, "Anda mendapatkan nilai $hasil", Toast.LENGTH_SHORT).show()
 
 
             }
 
             override fun onNothingSelected(parent: AdapterView<*>) {
-                // Do nothing
+                // Blok untuk tidak melakukan apapun
             }
         }
         
@@ -73,6 +71,8 @@ class CustomHisabActivity : AppCompatActivity() {
             }
 
             if (!isEmptyFields) {
+                
+                // jika tidak error, disini blok untuk mengeksekusi ketika tombol Hitung ditekan
                 val hasil = inputTanggal.toInt() + inputTahun.toInt() + bulan
                 
                 Toast.makeText(this@CustomHisabActivity, "Anda mendapatkan nilai $hasil", Toast.LENGTH_SHORT).show()

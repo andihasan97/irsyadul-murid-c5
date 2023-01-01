@@ -13,8 +13,8 @@
 
         <TextView
             style="@style/AllWrapContent.OutCv"
+            android:layout_width="71dp"
             android:layout_alignParentLeft="true"
-            android:text="17:30:57"
             android:textStyle="bold"
             android:id="@+id/tv_time_main"
                 />
@@ -23,7 +23,6 @@
             style="@style/AllWrapContent.OutCv"
             android:layout_alignBaseline="@id/tv_time_main"
             android:layout_toRightOf="@id/tv_time_main"
-            android:text="   |     Rabu Legi, 21 Desember 2022"
             android:id="@+id/tv_date_main"
                 />
 

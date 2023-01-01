@@ -14,7 +14,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="157dp"
+            android:layout_height="179dp"
             app:cardCornerRadius="13dp"
             app:cardElevation="2dp"
             android:id="@+id/cv_input_custom"

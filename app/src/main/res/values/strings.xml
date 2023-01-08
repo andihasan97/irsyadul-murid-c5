@@ -2,4 +2,7 @@
     <string name="app_name">Irsyadul Murid C5</string>
     <string name="values_time">00 : 00</string>
     <string name="values_degree">00° 00` 00``</string>
+    <string name="support">Supported by</string>
+    <string name="moonlight">Moon Light Studio</string>
+    <string name="version">version 1.1.1 Beta</string>
 </resources>

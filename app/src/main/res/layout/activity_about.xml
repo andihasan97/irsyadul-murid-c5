@@ -128,46 +128,10 @@
                 <TextView
                     android:layout_width="79dp"
                     android:layout_height="wrap_content"
-                    android:text="GitHub"
+                    android:text="Youtube"
                     android:textColor="?attr/text_incv"
                     android:layout_below="@id/tv_instagram"
                     android:layout_marginTop="21dp"
-                    android:layout_marginLeft="27dp"
-                    android:id="@+id/tv_github"
-                        
-                />
-
-                <TextView
-                    android:layout_width="223dp"
-                    android:layout_height="wrap_content"
-                    android:text=": github.com/andihasan97/irsyadul-murid-c5"
-                    android:textColor="?attr/text_incv"
-                    android:layout_below="@id/tv_isi_instagram"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignBaseline="@id/tv_github"
-                    android:id="@+id/tv_isi_github1"
-                        
-                />
-
-                <TextView
-                    android:layout_width="223dp"
-                    android:layout_height="wrap_content"
-                    android:text=": github.com/moonlightstudio7"
-                    android:textColor="?attr/text_incv"
-                    android:layout_below="@id/tv_isi_github1"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="16dp"
-                    android:id="@+id/tv_isi_github2"
-                        
-                />
-
-                <TextView
-                    android:layout_width="79dp"
-                    android:layout_height="wrap_content"
-                    android:text="Youtube"
-                    android:textColor="?attr/text_incv"
-                    android:layout_below="@id/tv_github"
-                    android:layout_marginTop="69dp"
                     android:layout_marginLeft="27dp"
                     android:id="@+id/tv_youtube"
                         
@@ -178,20 +142,45 @@
                     android:layout_height="wrap_content"
                     android:text=": youtube.com/@moonlightstudio"
                     android:textColor="?attr/text_incv"
-                    android:layout_below="@id/tv_isi_github2"
                     android:layout_alignParentRight="true"
                     android:layout_alignBaseline="@id/tv_youtube"
                         
                 />
+                
+                <TextView
+                    android:id="@+id/tv_supported"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/support"
+                    android:textColor="?attr/text_incv"
+                    android:layout_below="@id/tv_youtube"
+                    android:gravity="center"
+                    android:layout_marginTop="49dp"
+                        
+                />
+                
+                <TextView
+                    android:id="@+id/tv_moonlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moonlight"
+                    android:textColor="?attr/text_incv"
+                    android:textStyle="bold"
+                    android:layout_below="@id/tv_supported"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                        
+                />
+
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="version 1.1.3"
+                    android:text="@string/version"
                     android:textColor="?attr/text_incv"
-                    android:layout_below="@id/tv_youtube"
+                    android:layout_below="@id/tv_moonlight"
                     android:gravity="center"
-                    android:layout_marginTop="57dp"
+                    android:layout_marginTop="49dp"
                     android:layout_marginBottom="17dp"
                         
                 />

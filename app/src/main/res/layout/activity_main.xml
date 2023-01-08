@@ -13,7 +13,7 @@
 
         <TextView
             style="@style/AllWrapContent.OutCv"
-            android:layout_width="71dp"
+            android:layout_width="73dp"
             android:layout_alignParentLeft="true"
             android:textStyle="bold"
             android:id="@+id/tv_time_main"
@@ -275,27 +275,28 @@
                     style="@style/AllWrapContent.InCv.Tv"
                     android:text="Arah Qiblat B-U"
                     android:layout_below="@id/tv_rashdul2_main"
-                    android:id="@+id/tv_azimuth_ub_main"
+                    android:id="@+id/tv_azimuth_bu_main"
                         />
                         
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="@string/values_degree"
                     android:layout_below="@id/hasil_rashdul2_main"
-                    android:id="@+id/hasil_azimuth_ub_main"
+                    android:id="@+id/hasil_azimuth_bu_main"
                         />        
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv"
                     android:text="Arah Qiblat UTSB"
-                    android:layout_below="@id/tv_azimuth_ub_main"
+                    android:layout_below="@id/tv_azimuth_bu_main"
                     android:id="@+id/tv_azimuth_utsb_main"
                         />
 
                 <TextView
                     style="@style/AllWrapContent.InCv.Tv.Hasil"
                     android:text="@string/values_degree"
-                    android:layout_below="@id/hasil_azimuth_ub_main"
+                    android:layout_below="@id/hasil_azimuth_bu_main"
+                    android:id="@+id/hasil_azimuth_utsb_main"
                         />
 
                 <androidx.appcompat.widget.AppCompatButton

@@ -8,8 +8,10 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.TimeZone
 import java.util.Locale
+import android.widget.Toast
 import com.andihasan7.irsyadulmuridc5.databinding.ActivityMainBinding
 import com.andihasan7.irsyadulmuridc5.Konversi.Konversi
+import com.andihasan7.irsyadulmuridc5.IrsyadulMurid.IrsyadulMurid
 
 class MainActivity : AppCompatActivity() {
     
@@ -67,6 +69,26 @@ class MainActivity : AppCompatActivity() {
                 
                 
                 binding.tvDateMain.text = finalDate
+                
+                
+                val i = IrsyadulMurid(date, bulanS, year)
+        
+                binding.hasilImsakMain.text = i.getImsak()
+                binding.hasilShubuhMain.text = i.getShubuh()
+                binding.hasilTerbitMain.text = i.getThulu()
+                binding.hasilDluhaMain.text = i.getDluha()
+                binding.hasilDzuhurMain.text = i.getDzuhur()
+                binding.hasilAsharMain.text = i.getAshar()
+                binding.hasilMaghribMain.text = i.getMaghrib()
+                binding.hasilIsyaMain.text = i.getIsya()
+                binding.hasilTengahmalamMain.text = i.getTengahMalam()
+                binding.hasilRashdul1Main.text = i.getRashdul1()
+                binding.hasilRashdul2Main.text = i.getRashdul2()
+                binding.hasilDekRealMain.text = i.getDeklinasi()
+                binding.hasilEquationOfTimeMain.text = i.getEquationOfTime()
+                binding.hasilAzimuthBuMain.text = i.getQiblatBU()
+                binding.hasilAzimuthUtsbMain.text = i.getQiblatUTSB()
+        
 
                 // Tetapkan tanggal yang diformat ke TextView Menjadwal ulang tugas Runnable untuk dieksekusi dalam 100 milidetik
                 handler.postDelayed(this, 100)

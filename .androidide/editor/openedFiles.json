@@ -1,65 +1,95 @@
 {
   "allFiles": [
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml",
+      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/res/layout/activity_custom_hisab.xml",
       "selection": {
         "end": {
-          "column": 47,
+          "column": 113,
           "index": -1,
-          "line": 14
+          "line": 330
         },
         "start": {
-          "column": 47,
+          "column": 113,
           "index": -1,
-          "line": 14
+          "line": 330
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/MainActivity.kt",
+      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/CustomHisabActivity.kt",
       "selection": {
         "end": {
-          "column": 48,
+          "column": 19,
           "index": -1,
-          "line": 64
+          "line": 98
         },
         "start": {
-          "column": 48,
+          "column": 19,
           "index": -1,
-          "line": 64
+          "line": 98
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/Konversi/Konversi.kt",
+      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/IrsyadulMurid/IrsyadulMurid.kt",
       "selection": {
         "end": {
-          "column": 47,
+          "column": 0,
           "index": -1,
-          "line": 0
+          "line": 318
+        },
+        "start": {
+          "column": 0,
+          "index": -1,
+          "line": 318
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/MainActivity.kt",
+      "selection": {
+        "end": {
+          "column": 8,
+          "index": -1,
+          "line": 90
         },
         "start": {
           "column": 8,
           "index": -1,
-          "line": 0
+          "line": 90
         }
       }
     },
     {
-      "file": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/CustomHisabActivity.kt",
+      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/res/values/themes.xml",
       "selection": {
         "end": {
-          "column": 0,
+          "column": 47,
           "index": -1,
-          "line": 0
+          "line": 75
         },
         "start": {
-          "column": 0,
+          "column": 47,
           "index": -1,
-          "line": 0
+          "line": 75
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml",
+      "selection": {
+        "end": {
+          "column": 60,
+          "index": -1,
+          "line": 298
+        },
+        "start": {
+          "column": 60,
+          "index": -1,
+          "line": 298
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/MainActivity.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/res/values/themes.xml"
 }

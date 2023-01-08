@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import com.andihasan7.irsyadulmuridc5.databinding.ActivityCustomHisabBinding
+import com.andihasan7.irsyadulmuridc5.IrsyadulMurid.IrsyadulMurid
 
 class CustomHisabActivity : AppCompatActivity() {
     
@@ -54,8 +55,10 @@ class CustomHisabActivity : AppCompatActivity() {
         }
         
         binding.btnHitung.setOnClickListener {
-            val inputTanggal = binding.edtInputTanggal.text.toString().trim()
-            val inputTahun = binding.edtInputTahun.text.toString().trim()
+            var inputTanggal = binding.edtInputTanggal.text.toString().trim()
+            
+            var inputTahun = binding.edtInputTahun.text.toString().trim()
+            
 
             var isEmptyFields = false
 
@@ -73,9 +76,27 @@ class CustomHisabActivity : AppCompatActivity() {
             if (!isEmptyFields) {
                 
                 // jika tidak error, disini blok untuk mengeksekusi ketika tombol Hitung ditekan
-                val hasil = inputTanggal.toInt() + inputTahun.toInt() + bulan
+                // val hasil = inputTanggal.toInt() + inputTahun.toInt() + bulan
                 
-                Toast.makeText(this@CustomHisabActivity, "Anda mendapatkan nilai $hasil", Toast.LENGTH_SHORT).show()
+                val i = IrsyadulMurid(inputTanggal.toInt(), bulan, inputTahun.toInt())
+                
+                binding.hasilImsakCustom.text = i.getImsak()
+                binding.hasilShubuhCustom.text = i.getShubuh()
+                binding.hasilTerbitCustom.text = i.getThulu()
+                binding.hasilDluhaCustom.text = i.getDluha()
+                binding.hasilDzuhurCustom.text = i.getDzuhur()
+                binding.hasilAsharCustom.text = i.getAshar()
+                binding.hasilMaghribCustom.text = i.getMaghrib()
+                binding.hasilIsyaCustom.text = i.getIsya()
+                binding.hasilTengahmalamCustom.text = i.getTengahMalam()
+                binding.hasilRashdul1Custom.text = i.getRashdul1()
+                binding.hasilRashdul2Custom.text = i.getRashdul2()
+                binding.hasilDeklinasiCustom.text = i.getDeklinasi()
+                binding.hasilEotCustom.text = i.getEquationOfTime()
+                binding.hasilAzimuthBuCustom.text = i.getQiblatBU()
+                binding.hasilAzimuthUtsbCustom.text = i.getQiblatUTSB()
+                
+                // Toast.makeText(this@CustomHisabActivity, "Anda mendapatkan nilai $inputTanggal.toInt() $bulan $inputTahun.toInt()", Toast.LENGTH_SHORT).show()
             }
         }
     }

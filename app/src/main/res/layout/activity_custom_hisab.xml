@@ -328,7 +328,7 @@
 
                 <android.widget.TextView
                     style="@style/AllWrapContent.InCv"
-                    android:text="\t Jadwal di atas sudah ditambah Ihthiyat 2 menit kecuali Terbit dikurangi 2 menit."
+                    android:text="\t Jadwal di atas sudah ditambah Ihthiyat 2 menit kecuali Terbit tanpa Ihthiyat."
                     android:layout_below="@id/tv_azimuth_utsb_custom"
                     android:id="@+id/tv_info_custom"
                     android:layout_marginTop="31dp"

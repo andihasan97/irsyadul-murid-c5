@@ -16,31 +16,50 @@ class IrsyadulMurid(var date: Int, var month: Int, var year: Int) {
 	
 
     fun convertToTime(decimal: Double): String {
-    	val time = decimal.toInt()
-    	var minute = ((decimal - time) * 60).toInt()
-    	var second = (((decimal - time) * 60 - minute) * 60).toInt()
+    	var time = decimal.toInt().toString()
+    	var minute = ((decimal - time.toDouble()) * 60).toInt().toString()
+    	var second = (((decimal - time.toDouble()) * 60 - minute.toDouble()) * 60).toInt().toString()
 
     	// Tambahkan perhitungan untuk membulatkan detik ke menit
-    	if (second <= 60 && second >= 30) {
-        	minute += 1
-        	second -= 60
+    	if (second.toDouble() <= 60 && second.toDouble() >= 30) {
+        	minute = (minute.toInt() + 1).toString()
+            second = (second.toInt() - 60).toString()
     	}
+        
+        // Tambahkan nol sebelum angka yang kurang dari 10
+        time = time.padStart(2, '0')
+        minute = minute.padStart(2, '0')
 
     	return "$time : $minute"
 	}
 	
 	fun convertToTimeL(decimal: Double): String {
-    	val time = decimal.toInt()
-    	var minute = ((decimal - time) * 60).toInt()
-    	var second = (((decimal - time) * 60 - minute) * 60).round(2)
+    	var time = decimal.toInt().toString()
+    	var minute = ((decimal - time.toDouble()) * 60).toInt().toString()
+    	var second = (((decimal - time.toDouble()) * 60 - minute.toDouble()) * 60).round(2).toString()
+        
+        time = time.padStart(2, '0')
+        minute = minute.padStart(2, '0')
+        second = second.padStart(2, '0')
 
     	return "$time : $minute : $second"
 	}
 	
 	fun convertToDegree(decimal: Double): String {
-    	val degree = decimal.toInt()
-    	val minute = ((decimal - degree) * 60).toInt()
-    	val second = ((((decimal - degree) * 60) - minute) * 60).round(2)
+    	var degree = abs(decimal).toInt().toString()
+    	var minute = ((abs(decimal) - degree.toDouble()) * 60).toInt().toString()
+    	var second = ((((abs(decimal) - degree.toDouble()) * 60) - minute.toDouble()) * 60).round(2).toString()
+
+        // Tambahkan nol sebelum angka yang kurang dari 10
+        degree = degree.padStart(2, '0')
+        minute = minute.padStart(2, '0')
+        second = second.padStart(2, '0')
+        
+        if (decimal < 0) {
+            degree = "-$degree"
+            minute = "-$minute"
+            second = "-$second"
+        }
 
     	return "$degree° $minute` $second``"
 	}

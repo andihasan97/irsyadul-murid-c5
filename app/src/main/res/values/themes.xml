@@ -86,7 +86,7 @@
     </style>
     
     <style name="AllWrapContent.InCv.TvCustom.Hasil">
-        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_width">120dp</item>
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_marginRight">27dp</item>
         <item name="android:gravity">center</item>

@@ -99,6 +99,25 @@ class CustomHisabActivity : AppCompatActivity() {
                 // Toast.makeText(this@CustomHisabActivity, "Anda mendapatkan nilai $inputTanggal.toInt() $bulan $inputTahun.toInt()", Toast.LENGTH_SHORT).show()
             }
         }
+        
+        binding.btnHapus.setOnClickListener {
+            
+            binding.hasilImsakCustom.setText(R.string.values_time)
+            binding.hasilShubuhCustom.setText(R.string.values_time)
+            binding.hasilTerbitCustom.setText(R.string.values_time)
+            binding.hasilDluhaCustom.setText(R.string.values_time)
+            binding.hasilDzuhurCustom.setText(R.string.values_time)
+            binding.hasilAsharCustom.setText(R.string.values_time)
+            binding.hasilMaghribCustom.setText(R.string.values_time)
+            binding.hasilIsyaCustom.setText(R.string.values_time)
+            binding.hasilTengahmalamCustom.setText(R.string.values_time)
+            binding.hasilRashdul1Custom.setText(R.string.values_time)
+            binding.hasilRashdul2Custom.setText(R.string.values_time)
+            binding.hasilDeklinasiCustom.setText(R.string.values_degree)
+            binding.hasilEotCustom.setText(R.string.values_degree)
+            binding.hasilAzimuthBuCustom.setText(R.string.values_degree)
+            binding.hasilAzimuthUtsbCustom.setText(R.string.values_degree)
+
+        }
     }
-    
 }

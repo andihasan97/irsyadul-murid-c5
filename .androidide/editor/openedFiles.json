@@ -1,65 +1,35 @@
 {
   "allFiles": [
     {
+      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/MainActivity.kt",
+      "selection": {
+        "end": {
+          "column": 19,
+          "index": -1,
+          "line": 93
+        },
+        "start": {
+          "column": 19,
+          "index": -1,
+          "line": 93
+        }
+      }
+    },
+    {
       "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/IrsyadulMurid/IrsyadulMurid.kt",
       "selection": {
         "end": {
-          "column": 40,
+          "column": 23,
           "index": -1,
-          "line": 42
+          "line": 302
         },
         "start": {
-          "column": 40,
+          "column": 23,
           "index": -1,
-          "line": 42
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/res/layout/activity_custom_hisab.xml",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": -1,
-          "line": 0
-        },
-        "start": {
-          "column": 0,
-          "index": -1,
-          "line": 0
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/res/values/themes.xml",
-      "selection": {
-        "end": {
-          "column": 44,
-          "index": -1,
-          "line": 88
-        },
-        "start": {
-          "column": 44,
-          "index": -1,
-          "line": 88
-        }
-      }
-    },
-    {
-      "file": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/res/layout/activity_main.xml",
-      "selection": {
-        "end": {
-          "column": 0,
-          "index": -1,
-          "line": 0
-        },
-        "start": {
-          "column": 0,
-          "index": -1,
-          "line": 0
+          "line": 302
         }
       }
     }
   ],
-  "selectedFile": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/IrsyadulMurid/IrsyadulMurid.kt"
+  "selectedFile": "/storage/emulated/0/AndroidIDEbackup/irsyadul-murid-c5/app/src/main/java/com/andihasan7/irsyadulmuridc5/MainActivity.kt"
 }

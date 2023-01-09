@@ -260,47 +260,47 @@ class IrsyadulMurid(var date: Int, var month: Int, var year: Int) {
 	
 	// Dzuhur WIB
 	fun getDzuhur(): String {
-		return convertToTime(dzuhurWib)
+		return convertToTimeL(dzuhurWib)
 	}
 	
 	// Ashar WIB
 	fun getAshar(): String {
-		return convertToTime(asharWib)
+		return convertToTimeL(asharWib)
 	}
 	
 	// Maghrib WIB
 	fun getMaghrib(): String {
-		return convertToTime(maghribWib)
+		return convertToTimeL(maghribWib)
 	}
 	
 	// Isya' WIB
 	fun getIsya(): String {
-		return convertToTime(isyaWib)
+		return convertToTimeL(isyaWib)
 	}
 	
 	// Shubuh WIB
 	fun getShubuh(): String {
-		return convertToTime(shubuhWib)
+		return convertToTimeL(shubuhWib)
 	}
 	
 	// Imsak WIB
 	fun getImsak(): String {
-		return convertToTime(imsakWib)
+		return convertToTimeL(imsakWib)
 	}
 	
 	// Thulu' WIB
 	fun getThulu(): String {
-		return convertToTime(thuluWib)
+		return convertToTimeL(thuluWib)
 	}
 	
 	// Dluha WIB
 	fun getDluha(): String {
-		return convertToTime(dluhaWib)
+		return convertToTimeL(dluhaWib)
 	}
 	
 	// Tengah Malam WIB
 	fun getTengahMalam(): String {
-		return convertToTime(tengahMalamWib)
+		return convertToTimeL(tengahMalamWib)
 	}
 	
 	

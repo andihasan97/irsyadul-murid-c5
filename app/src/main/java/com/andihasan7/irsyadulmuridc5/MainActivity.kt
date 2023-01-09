@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
     
     // mengaktifkan viewBinding
     private lateinit var binding: ActivityMainBinding
+    private lateinit var handler: Handler
+    private lateinit var runnable: Runnable
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +26,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         
         
-        val handler = Handler()
+        handler = Handler()
         
         // Tetapkan tugas Runnable untuk dieksekusi setiap detik
-        handler.post(object : Runnable {
+        runnable = object : Runnable {
             override fun run() {
                 // Dapatkan waktu saat ini
                 val currentTime = Calendar.getInstance(TimeZone.getDefault()).time
@@ -88,12 +90,17 @@ class MainActivity : AppCompatActivity() {
                 binding.hasilEquationOfTimeMain.text = i.getEquationOfTime()
                 binding.hasilAzimuthBuMain.text = i.getQiblatBU()
                 binding.hasilAzimuthUtsbMain.text = i.getQiblatUTSB()
+                
+                // Toast.makeText(this@MainActivity, "Anda mendapatkan nilai $date $bulanS $year", Toast.LENGTH_SHORT).show()
         
 
                 // Tetapkan tanggal yang diformat ke TextView Menjadwal ulang tugas Runnable untuk dieksekusi dalam 100 milidetik
                 handler.postDelayed(this, 100)
             }
-        })
+        }
+        
+        // jalankan runnable
+        handler.post(runnable)
         
         
         binding.btnCustomHisab.setOnClickListener {
@@ -107,4 +114,16 @@ class MainActivity : AppCompatActivity() {
         }
         
     }
+    
+    override fun onResume() {
+        super.onResume()
+        handler.postDelayed(runnable, 100) // jalankan runnable
+    }
+
+    
+    override fun onPause() {
+        super.onPause()
+        handler.removeCallbacks(runnable)
+    }
+
 }
